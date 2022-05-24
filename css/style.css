@@ -228,6 +228,7 @@ nav .mobile-hamburger{
     font-size: 1rem;
     font-weight: bold;
 }
+/* Explore PS4 */
 .PS4_presentation{
     max-width: 680px;
     margin: 0 auto;
@@ -265,6 +266,21 @@ nav .mobile-hamburger{
 .PSPlus-logo{
     width: 60%;
 }
+/* PS Store discount */
+#discount{
+    padding: 4rem 0;
+}
+.discount-text{
+    text-align: center;
+}
+.discount-text h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.discount-text h4{
+    margin-bottom: 5rem;
+}
+
 
 /* Override */
 .card{
