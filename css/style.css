@@ -204,7 +204,25 @@ nav .mobile-hamburger{
     color: white;
     height: 600px;
 }
-
+#game-preview .container{
+    height: 100%;
+}
+/* New releases */
+#new-releases{
+    background-color: #1f1f1f;
+    color: white;
+}
+#new-releases h3{
+    padding: 1rem 0;
+}
+#new-releases img{
+    border-radius: 20px;
+    margin-bottom: .5rem;
+}
+#new-releases h5{
+    font-size: 1rem;
+    font-weight: bold;
+}
 /*###################################################*/
 
 
