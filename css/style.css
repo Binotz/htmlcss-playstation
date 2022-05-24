@@ -1,11 +1,20 @@
+/* VARS */
+:root{
+    --ps_blue: #0072ce;
+    --ps_gray: #727272;
+}
 /* RESET */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+/* COMMON */
 body{
     font-family: Arial, sans-serif;
+}
+body h4{
+    color: var(--ps_gray);
 }
 header{
     font-family: Helvetica, arial, sans-serif;
@@ -18,7 +27,9 @@ ul{
     margin: 0;
     padding: 0;
 }
-/* COMMON */
+section{
+    padding: 2rem 0;
+}
 /* UTILITIES */
 .ps_btn{
     padding: .5rem 1rem;
@@ -105,7 +116,7 @@ nav .mobile-hamburger{
     justify-content: flex-end;
 }
 .ps_banner_details{
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 .ps_banner_details *{
     margin-bottom: 2rem;
@@ -119,10 +130,35 @@ nav .mobile-hamburger{
 .ps_banner_details p{
     font-weight: bold;
 }
+/* PS5 showcase */
+#PS5_showcase .row img{
+    border-radius: 12px;
+}
+.ps_card_container{
+    padding: 2px;
+}
+.selected{
+    border: 2px solid var(--ps_blue);
+    border-radius: 15px;
+}
+.image-list{
+    margin-bottom: 7rem;
+}
+/* PS5 description */
+.PS5-presentation{
+    text-align: center;
+}
+.PS5-presentation h6{
+    text-transform: uppercase;
+    color: var(--ps_blue);
+}
+.PS5-presentation h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
 
 
 /* MEDIA QUERIES */
-
 /* Medium */
 @media all and (min-width: 768px) {
     /* Main */
