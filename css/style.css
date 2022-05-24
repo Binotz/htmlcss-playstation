@@ -45,6 +45,12 @@ section{
     background-color: #cd3d0f;
     color: white;
 }
+.ps_btn_blue{
+    background-color: var(--ps_blue);
+    color: white;
+    padding: .9rem 1rem;
+}
+
 /* Header */
 .header-top{
     background-color: black;
@@ -131,7 +137,7 @@ nav .mobile-hamburger{
     font-weight: bold;
 }
 /* PS5 showcase */
-#PS5_showcase .row img{
+#PS5_showcase .ps_card_container img{
     border-radius: 12px;
 }
 .ps_card_container{
@@ -145,23 +151,75 @@ nav .mobile-hamburger{
     margin-bottom: 7rem;
 }
 /* PS5 description */
-.PS5-presentation{
+.PS5_presentation{
     text-align: center;
+    margin-bottom: 5rem;
 }
-.PS5-presentation h6{
+.PS5_presentation h6,
+.PS5_description h6{
     text-transform: uppercase;
     color: var(--ps_blue);
 }
-.PS5-presentation h2{
+.PS5_presentation h2,
+.PS5_description h2{
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
+.PS5_description_text{
+    padding-bottom: 2rem;
+ }
+.PS5_description_text h4{
+    margin-bottom: 3rem;
+}
+/* PS5 accessories */
+.PS5_accessories .col{
+    filter: opacity(.5);
+}
+.PS5_accessories .col.active{
+    filter: opacity(1);
+}
+.PS5_accessory_content.active{
+    border-bottom: 3px solid var(--ps_blue);
+    filter: opacity(1);
+}
+.PS5_accessory {
+    height: 100%;
+    text-align: center;
+}
+.PS5_accessory_content{
+    height: 100%;
+    padding-bottom: 1rem;
+}
+.PS5_accessory span{
+    display: none;
+}
+.PS5_accessory img{
+    margin-bottom: 5px;
+}
+
+
+
+/*###################################################*/
+
 
 
 /* MEDIA QUERIES */
 /* Medium */
 @media all and (min-width: 768px) {
     /* Main */
+    /* PS5 details */
+    .PS5_description{
+        display: flex;
+        align-items: center;
+    }
+    /* PS5 accessories */
+    .PS5_accessory span{
+        display: inline-block;
+        text-align: center;
+    }
+    .PS5_accessory img{
+        width: 60%;
+    } 
 }
 
 /* Large and above */
