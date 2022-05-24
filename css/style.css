@@ -290,6 +290,16 @@ nav .mobile-hamburger{
     background-color: #161c3b;
     color: white;
 }
+/* Social */
+#social{
+    padding: 4rem 0;
+}
+#social h2{
+    padding-bottom: 4rem;
+}
+.social-text{
+    text-align: center;
+}
 
 
 /* Override */
