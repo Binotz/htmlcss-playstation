@@ -50,6 +50,11 @@ section{
     color: white;
     padding: .9rem 1rem;
 }
+.ps_btn_gray{
+    background-color: #d9dadc;
+    color: #2d64e6;
+    padding: .9rem 1rem;
+}
 
 /* Header */
 .header-top{
@@ -235,7 +240,31 @@ nav .mobile-hamburger{
 .PS4_presentation h4{
     margin-bottom: 5rem;
 }
-
+/* PS Plus */
+#PSPlus{
+    background-color: #bebcbb;
+    padding: 2rem 0;
+}
+.PSPlus-details{
+    display: flex;
+}
+.PSPlus-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.PSPlus-text a{
+    align-self: flex-start;
+}
+.PSPlus-img{
+    display: none;
+}
+.PSPlus-logo{
+    width: 60%;
+}
 
 /* Override */
 .card{
@@ -254,6 +283,8 @@ nav .mobile-hamburger{
     font-weight: bold;
     margin-bottom: 2rem;
 }
+
+
 
 /*###################################################*/
 
@@ -276,6 +307,17 @@ nav .mobile-hamburger{
     .PS5_accessory img{
         width: 60%;
     } 
+    /* PS Plus */
+    #PSPlus{
+        padding: 0;
+    }
+    .PSPlus-text{
+        width: 50%;
+    }
+    .PSPlus-img{
+        display: inline-block;
+        width: 50%;
+    }
 }
 
 /* Large and above */
@@ -295,5 +337,11 @@ nav .mobile-hamburger{
     }
     .ps_banner_details p{
         max-width: 380px;
+    }
+    /* PS Plus */
+    /* PS Plus text */
+    .PSPlus-text {
+        width: 50%;
+        padding: 3rem 0;
     }
 }
