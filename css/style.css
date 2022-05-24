@@ -10,3 +10,85 @@ body{
 header{
     font-family: Helvetica, arial, sans-serif;
 }
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* COMMON */
+/* UTILITIES */
+.ps_btn{
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+}
+.ps_btn_black{
+    background-color: #363636;
+    color: white;
+    font-weight: bold;
+}
+/* Header */
+.header-top{
+    background-color: black;
+    height: 40px;
+}
+.header-top img{
+    width: 80px;
+    height: 40px;
+}
+/* nav */
+nav{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav li{
+    display: inline-block;
+    padding: 0 .7rem;
+    line-height: 3rem;
+}
+nav span {
+    margin-right: 5px;
+}
+nav img{
+    width: .6rem;
+}
+nav .mobile-hide{
+    display: none;
+}
+nav .logo{
+    width: 3rem;
+}
+nav .menu-right{
+    padding-right: .8rem;
+}
+nav .menu-right li{
+    padding-right: 0;
+}
+.lens{
+    width: 30px;
+}
+nav .mobile-hamburger{
+    padding-top: .3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+
+@media all and (min-width: 992px){
+    /* Header */
+    /* Navbar */
+    nav .mobile-hide{
+        display: inline-block;
+    }
+    nav .mobile-hamburger{
+        display: none;
+    }
+}
