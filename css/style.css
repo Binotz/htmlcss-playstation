@@ -55,6 +55,11 @@ section{
     color: #2d64e6;
     padding: .9rem 1rem;
 }
+.ps_btn_white{
+    background-color: #f5f5f5;
+    color: black;
+    padding: .9rem 1rem;
+}
 
 /* Header */
 .header-top{
@@ -279,6 +284,11 @@ nav .mobile-hamburger{
 }
 .discount-text h4{
     margin-bottom: 5rem;
+}
+/* PS Now */
+#PSNow{
+    background-color: #161c3b;
+    color: white;
 }
 
 
