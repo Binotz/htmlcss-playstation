@@ -1,0 +1,470 @@
+/* VARS */
+:root{
+    --ps_blue: #0072ce;
+    --ps_gray: #727272;
+}
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* COMMON */
+body{
+    font-family: Arial, sans-serif;
+}
+body h4{
+    color: var(--ps_gray);
+}
+header{
+    font-family: Helvetica, arial, sans-serif;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+main{
+    padding-top: calc(40px + 4rem);
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+section{
+    padding: 2rem 0;
+}
+footer{
+    background-color: #00439c;
+    color: white;
+}
+/* UTILITIES */
+.ps_btn{
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.ps_btn_black{
+    background-color: #363636;
+    color: white;
+}
+.ps_btn_orange{
+    background-color: #cd3d0f;
+    color: white;
+}
+.ps_btn_blue{
+    background-color: var(--ps_blue);
+    color: white;
+    padding: .9rem 1rem;
+}
+.ps_btn_gray{
+    background-color: #363636;
+    color: white;
+    padding: .9rem 1rem;
+}
+.ps_btn_white{
+    background-color: #f5f5f5;
+    color: black;
+    padding: .9rem 1rem;
+}
+
+/* Header */
+.header-top{
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.header-top img{
+    width: 80px;
+    height: 40px;
+    padding-right: 1rem;
+}
+/* nav */
+nav{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid var(--ps_gray);
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav .container-fluid{
+    background-color: white;
+}
+
+.lens{
+    width: 30px;
+}
+
+/* MAIN */
+/* Jumbotron / Game banner */
+#ps_jumbotron{
+    background-image: url('../img/jumbo-bg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 600px;
+}
+#ps_jumbotron .container{
+    height: 100%;
+}
+.game_preview{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.ps_banner_details{
+    padding-bottom: 1rem;
+}
+.ps_banner_details *{
+    margin-bottom: 2rem;
+}
+.ps_banner_details img{
+    width: 55%;
+}
+.ps_banner_details h2{
+    font-size: 3rem;
+}
+.ps_banner_details p{
+    font-weight: bold;
+}
+/* PS5 showcase */
+#PS5_showcase .ps_card_container img{
+    border-radius: 12px;
+}
+.ps_card_container{
+    padding: 2px;
+}
+.selected{
+    border: 2px solid var(--ps_blue);
+    border-radius: 15px;
+}
+.image-list{
+    margin-bottom: 7rem;
+}
+/* PS5 description */
+.PS5_presentation{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.PS5_presentation h6,
+.PS5_description h6{
+    text-transform: uppercase;
+    color: var(--ps_blue);
+}
+.PS5_presentation h2,
+.PS5_description h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.PS5_description_text{
+    padding-bottom: 2rem;
+ }
+.PS5_description_text h4{
+    margin-bottom: 3rem;
+}
+/* PS5 accessories */
+.PS5_accessories .col{
+    filter: opacity(.5);
+}
+.PS5_accessories .col.active{
+    filter: opacity(1);
+}
+.PS5_accessory_content.active{
+    border-bottom: 3px solid var(--ps_blue);
+    filter: opacity(1);
+}
+.PS5_accessory {
+    height: 100%;
+    text-align: center;
+}
+.PS5_accessory_content{
+    height: 100%;
+    padding-bottom: 1rem;
+}
+.PS5_accessory span{
+    display: none;
+}
+.PS5_accessory img{
+    margin-bottom: 5px;
+}
+/*  Game preview  */
+#game-preview{
+    background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 630px;
+}
+#game-preview .container{
+    height: 100%;
+}
+/* New releases */
+#new-releases{
+    background-color: #1f1f1f;
+    color: white;
+}
+#new-releases h3{
+    padding: 1rem 0;
+}
+#new-releases img{
+    border-radius: 20px;
+    margin-bottom: .5rem;
+}
+#new-releases h5{
+    font-size: 1rem;
+    font-weight: bold;
+}
+/* Explore PS4 */
+.PS4_presentation{
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+}
+.PS4_presentation h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.PS4_presentation h4{
+    margin-bottom: 5rem;
+}
+/* PS Plus */
+#PSPlus{
+    background-color: #bebcbb;
+    padding: 2rem 0;
+}
+.PSPlus-details{
+    display: flex;
+}
+.PSPlus-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+.PSPlus-text a{
+    align-self: flex-start;
+}
+.PSPlus-img{
+    display: none;
+}
+.PSPlus-logo{
+    width: 60%;
+}
+/* PS Store discount */
+#discount{
+    padding: 4rem 0;
+}
+.discount-text{
+    text-align: center;
+}
+.discount-text h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.discount-text h4{
+    margin-bottom: 5rem;
+}
+/* PS Now */
+#PSNow{
+    background-color: #161c3b;
+    color: white;
+}
+/* Social */
+#social{
+    padding: 4rem 0;
+}
+#social h2{
+    padding-bottom: 4rem;
+}
+.social-text{
+    text-align: center;
+}
+/* Footer */
+.footer-menu{
+    padding: 4rem 0;
+    color: white;
+}
+.footer-menu .footer-logo img{
+    width: 25%;
+    margin-bottom: 3rem;
+}
+.footer-menu .footer-country img{
+    width: 5%;
+    margin-right: 10px;
+}
+.footer-country > *{
+    vertical-align: middle;
+}
+.footer-top{
+    margin-bottom: 4rem;
+}
+.footer-top a{
+    text-decoration: none;
+    color: white;
+}
+.footer-bottom a{
+    color: inherit;
+}
+.footer-bottom img{
+    width: 25%;
+    margin-bottom: 1rem;
+}
+
+
+
+/* Override */
+.card{
+    border: 0px solid white;   
+}
+.card-body {
+    padding: 1rem 0rem;
+}
+.card-body h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.card-body p{
+    color: var(--ps_gray);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+
+/* BONUS-Override */
+/* Navbar */
+.dropdown-menu {
+    border: 0px solid white;
+}
+.ps5-icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.ps5-icon a{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ps5-icon img{
+    width: 50%;
+}
+.nav-item{
+    align-self: flex-start;
+}
+.navbar-light .navbar-nav.navbar-right .nav-link.ps_btn_gray{
+    color: white;
+    padding: .6rem 1rem;
+}
+
+/*###################################################*/
+
+
+
+/* MEDIA QUERIES */
+/* Medium */
+@media all and (min-width: 768px) {
+    /* Main */
+    /* PS5 details */
+    .PS5_description{
+        display: flex;
+        align-items: center;
+    }
+    /* PS5 accessories */
+    .PS5_accessory span{
+        display: inline-block;
+        text-align: center;
+    }
+    .PS5_accessory img{
+        width: 60%;
+    } 
+    /* PS Plus */
+    #PSPlus{
+        padding: 0;
+    }
+    .PSPlus-text{
+        width: 50%;
+    }
+    .PSPlus-img{
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+/* Large and above */
+@media all and (min-width: 992px){
+    /* Header */
+    /* Navbar */
+    nav .mobile-hide{
+        display: inline-block;
+    }
+    nav .mobile-hamburger{
+        display: none;
+    }
+    /* Main */
+    /* Jumbotron / Game banner */
+    .ps_banner_details img{
+        width: 20%;
+    }
+    .ps_banner_details p{
+        max-width: 380px;
+    }
+    /* PS Plus */
+    /* PS Plus text */
+    .PSPlus-text {
+        width: 50%;
+        padding: 3rem 0;
+    }
+    /* Footer */
+    .footer-bottom img{
+        width: 15%;
+        margin-bottom: 1rem;
+    }
+
+    /* BONUS - OVerride */
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: fixed;
+        left: -1px;
+        right: -1px;
+        top: 100px;
+    }
+    .ps5-icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .ps5-icon a{
+        width: 10%;
+    }
+    .dropdown-menu .dropdown-links-ps5 ul{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .dropdown-menu a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-expand-lg .navbar-nav {
+        align-items: center;
+    }
+    .navbar-right>*{
+        margin-left: 1rem;
+    }
+
+}
