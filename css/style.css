@@ -30,6 +30,10 @@ ul{
 section{
     padding: 2rem 0;
 }
+footer{
+    background-color: #00439c;
+    color: white;
+}
 /* UTILITIES */
 .ps_btn{
     padding: .5rem 1rem;
@@ -212,7 +216,7 @@ nav .mobile-hamburger{
     background-size: cover;
     background-position: center;
     color: white;
-    height: 600px;
+    height: 630px;
 }
 #game-preview .container{
     height: 100%;
@@ -300,6 +304,37 @@ nav .mobile-hamburger{
 .social-text{
     text-align: center;
 }
+/* Footer */
+.footer-menu{
+    padding: 4rem 0;
+    color: white;
+}
+.footer-menu .footer-logo img{
+    width: 25%;
+    margin-bottom: 3rem;
+}
+.footer-menu .footer-country img{
+    width: 5%;
+    margin-right: 10px;
+}
+.footer-country > *{
+    vertical-align: middle;
+}
+.footer-top{
+    margin-bottom: 4rem;
+}
+.footer-top a{
+    text-decoration: none;
+    color: white;
+}
+.footer-bottom a{
+    color: inherit;
+}
+.footer-bottom img{
+    width: 25%;
+    margin-bottom: 1rem;
+}
+
 
 
 /* Override */
@@ -379,5 +414,10 @@ nav .mobile-hamburger{
     .PSPlus-text {
         width: 50%;
         padding: 3rem 0;
+    }
+    /* Footer */
+    .footer-bottom img{
+        width: 15%;
+        margin-bottom: 1rem;
     }
 }
