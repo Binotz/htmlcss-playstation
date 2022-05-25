@@ -145,6 +145,18 @@ nav .container-fluid{
 .ps_card_container{
     padding: 2px;
 }
+/* BONUS - Hover */
+.ps_card_container:hover{
+    animation-name: slide-up;
+    animation-timing-function: linear;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-up {
+    100%{
+        transform: translateY(-5%);
+    }
+}
 .selected{
     border: 2px solid var(--ps_blue);
     border-radius: 15px;
@@ -188,6 +200,18 @@ nav .container-fluid{
     height: 100%;
     text-align: center;
 }
+/* BONUS - Hover */
+.PS5_accessories .col:hover{
+    animation-name: active;
+    animation-timing-function: linear;
+    animation-duration: .3s;
+    animation-fill-mode: forwards;
+}
+@keyframes active{
+    100%{
+        filter: opacity(1); 
+    }
+}
 .PS5_accessory_content{
     height: 100%;
     padding-bottom: 1rem;
@@ -220,6 +244,18 @@ nav .container-fluid{
 #new-releases img{
     border-radius: 20px;
     margin-bottom: .5rem;
+}
+/* BONUS - Hover */
+#new-releases .col:hover{
+    animation-name: pop-up;
+    animation-timing-function: linear;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+@keyframes pop-up {
+    100%{
+        transform: scale(1.03);
+    }
 }
 #new-releases h5{
     font-size: 1rem;
