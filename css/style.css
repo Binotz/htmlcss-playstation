@@ -22,6 +22,12 @@ header{
     position: fixed;
     z-index: 10;
 }
+header span{
+    color: var(--ps_gray);
+}
+header .ps_btn span{
+    color: white;
+}
 main{
     padding-top: calc(40px + 3rem);
 }
@@ -52,16 +58,38 @@ footer{
     color: white;
 }
 .ps_btn_black:hover{
-
+    color: white;
+    outline-color: #363636;
+    animation-name: border-outline;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
+
 .ps_btn_orange{
     background-color: #cd3d0f;
     color: white;
+}
+.ps_btn_orange:hover{
+    color: white;
+    outline-color: #cd3d0f;
+    animation-name: border-outline;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 .ps_btn_blue{
     background-color: var(--ps_blue);
     color: white;
     padding: .9rem 1rem;
+}
+.ps_btn_blue:hover{
+    color: white;
+    outline-color: var(--ps_blue);
+    animation-name: border-outline;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 .ps_btn_gray{
     background-color: #d9dadc;
@@ -73,7 +101,16 @@ footer{
     color: black;
     padding: .9rem 1rem;
 }
+@keyframes border-outline {
+    100%{
+       outline-offset: 3px;
+       outline-style: solid; 
+    }
+}
 /* Header */
+header span:hover{
+    color: black;
+}
 .header-top{
     background-color: black;
     height: 40px;

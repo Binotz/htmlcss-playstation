@@ -55,20 +55,51 @@ footer{
     background-color: #cd3d0f;
     color: white;
 }
+.ps_btn_orange:hover{
+    color: white;
+    outline-color: #cd3d0f;
+    animation-name: border-outline;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
 .ps_btn_blue{
     background-color: var(--ps_blue);
     color: white;
     padding: .9rem 1rem;
+}
+.ps_btn_blue:hover{
+    color: white;
+    outline-color: var(--ps_blue);
+    animation-name: border-outline;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
 }
 .ps_btn_gray{
     background-color: #363636;
     color: white;
     padding: .9rem 1rem;
 }
+.ps_btn_gray:hover{
+    color: white;
+    outline-color: #363636;
+    animation-name: border-outline;
+    animation-duration: .1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
 .ps_btn_white{
     background-color: #f5f5f5;
     color: black;
     padding: .9rem 1rem;
+}
+@keyframes border-outline {
+    100%{
+       outline-offset: 3px;
+       outline-style: solid; 
+    }
 }
 
 /* Header */
