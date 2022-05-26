@@ -274,15 +274,19 @@ nav .container-fluid{
 .PS4_presentation h4{
     margin-bottom: 5rem;
 }
-/* PS Plus */
+/* PS Plus / PS Now*/
 #PSPlus{
     background-color: #bebcbb;
     padding: 2rem 0;
 }
-.PSPlus-details{
+#PSNow{
+    background-color: #161c3b;
+    color: white;
+}
+.PS-service-details{
     display: flex;
 }
-.PSPlus-text{
+.PS-service-text{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -290,13 +294,13 @@ nav .container-fluid{
     gap: 1rem;
     padding: 1rem 0;
 }
-.PSPlus-text a{
+.PS-service-text a{
     align-self: flex-start;
 }
-.PSPlus-img{
+.PS-service-img{
     display: none;
 }
-.PSPlus-logo{
+.PS-service-logo{
     width: 60%;
 }
 /* PS Store discount */
@@ -312,11 +316,6 @@ nav .container-fluid{
 }
 .discount-text h4{
     margin-bottom: 5rem;
-}
-/* PS Now */
-#PSNow{
-    background-color: #161c3b;
-    color: white;
 }
 /* Social */
 #social{
@@ -444,10 +443,10 @@ nav .container-fluid{
     #PSPlus{
         padding: 0;
     }
-    .PSPlus-text{
+    .PS-service-text{
         width: 50%;
     }
-    .PSPlus-img{
+    .PS-service-img{
         display: inline-block;
         width: 50%;
     }
@@ -473,7 +472,7 @@ nav .container-fluid{
     }
     /* PS Plus */
     /* PS Plus text */
-    .PSPlus-text {
+    .PS-service-text {
         width: 50%;
         padding: 3rem 0;
     }
